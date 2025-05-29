@@ -68,3 +68,26 @@ if peppsmall == "yes":
 else:
     print ("You have wrong inpute")
 print (f"Your Total Ammount is {bill1}")
+
+#Love Score 
+name1 = input("Put Your Male friend name").lower()
+name2 = input("Put your female friend name").lower()
+combine = name1+name2
+t = combine.count("t")
+r = combine.count("u")
+u = combine.count("u")
+e = combine.count("e")
+true = t + r + u + e
+l = combine.count("l")
+o = combine.count("o")
+v = combine.count("v")
+e = combine.count("e")
+love = l + o + v + e
+total_score = (f"{true}+{love}")
+
+if total_score < 10 and total_score > 90:
+    print ("your relactionship is like coke and mentos")
+elif total_score >= 40 or total_score <= 50:
+    print ("You are ok Togather")
+else: 
+    print(f"Your score is {total_score}")
