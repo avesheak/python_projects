@@ -15,3 +15,4 @@ print (list)
 name = input("Give me Names with , for who will pay the bill")
 listname = name.split(", ")
 pay = listname[random_choice]
+new = 20
