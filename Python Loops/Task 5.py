@@ -58,5 +58,42 @@ for score2 in student_scores:
 
 print (height_score1)
 
+## Adding total even number in loop
+number_add=0
+for num in range(2,101,2):
+    number_add += num
+print (number_add)
 
+##fizbuzz game
+
+for game in range(1,101):
+    if game % 3 == 0 and game % 5 == 0:
+        print ("Fizzbuzz")
+    elif game % 3 == 0:
+        print ("Fizz")
+    elif game % 5 == 0:
+        print ("Bazz")
+    else:
+        print (game)
+
+#Random Password Genarator: 
+import random
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+nr_alphabate = int(input("Put how many alphabate your want"))
+nr_numbers = int(input("Put how many numbers your want"))
+nr_simbol= int(input("Put how many simbol your want"))
+password = []
+
+for pa in range(nr_alphabate):
+    password.append(random.choice(letters))
+for pa in range(nr_numbers):
+    password.append(random.choice(numbers))
+for pa in range(nr_simbol):
+    password.append(random.choice(symbols))
+print (password)
+random.shuffle(password)
+join = ''.join(password)
+print (join)
 
