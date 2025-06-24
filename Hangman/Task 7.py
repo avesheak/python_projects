@@ -1,69 +1,10 @@
 import random
-
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
-
+import hangman_art
+import hangman_words
 lives = 6
-word_list = ["aardvark", "baboon", "camel"]
-choice_word = random.choice(word_list).lower()
-
+choice_word = random.choice(hangman_words.word_list)
+print (hangman_art.logo)
 display = ["_" for _ in choice_word]
-
 print(display)
 
 end_of_the_game = False
@@ -88,7 +29,7 @@ while not end_of_the_game:
             print(f"The word was: {choice_word}")
 
     print(display)
-    print(stages[lives])
+    print(hangman_art.stages)
 
     if "_" not in display:
         end_of_the_game = True
