@@ -92,6 +92,8 @@ def small (direction,text,shift):
         deencrypt(text,shift)
     else:
         print("You put a wrong input")
+from art import logo
+
 
 
 
