@@ -18,3 +18,29 @@ for grade in Student_score:
         print("Fail")
 
 ## Travel Log: 
+Bangladesh = {
+    "Dhaka" : {"City I visited" : ["Mirpur" , "Tejgaon", "Dhanmondi"], "total visit": 12},
+     "East_india" :{"City I visited":["Gujrat", "Rajasthan", "Mumbai"], "City total visit": 12}
+}
+## 9.2 Test
+travel_log = [
+{
+  "country": "France",
+  "visits": 12,
+  "cities": ["Paris", "Lille", "Dijon"]
+},
+{
+  "country": "Germany",
+  "visits": 5,
+  "cities": ["Berlin", "Hamburg", "Stuttgart"]
+},
+]
+def add_new_country(country_visited,time_visited, city_visited ):
+    new_country={}
+    new_country["country"]=country_visited
+    new_country["visits"]=time_visited
+    new_country["cities"]=city_visited
+    travel_log.append(new_country)
+
+add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+print(travel_log)
