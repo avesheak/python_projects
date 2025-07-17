@@ -44,3 +44,26 @@ def add_new_country(country_visited,time_visited, city_visited ):
 
 add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
 print(travel_log)
+
+# Bidding game 
+logo = '''
+                         ___________
+                         \         /
+                          )_______(
+                          |"""""""|_.-._,.---------.,_.-._
+                          |       | | |               | | ''-.
+                          |       |_| |_             _| |_..-'
+                          |_______| '-' `'---------'` '-'
+                          )"""""""(
+                         /_________\\
+                       .-------------.
+                      /_______________\\
+'''
+total_bid = {
+    "name": "a",
+    "bid": "b",
+}
+def total_member(user,money):
+    user = input("What is your name")
+    money = input("What is yoru bid= $")
+print(total_member)
