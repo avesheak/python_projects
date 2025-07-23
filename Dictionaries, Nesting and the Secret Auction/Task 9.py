@@ -59,11 +59,22 @@ logo = '''
                        .-------------.
                       /_______________\\
 '''
-total_bid = {
-    "name": "a",
-    "bid": "b",
-}
-def total_member(user,money):
-    user = input("What is your name")
-    money = input("What is yoru bid= $")
-print(total_member)
+print(logo)
+total_user={}
+status = input("Is here anyone available for bid? Yes/No").lower()
+while status == "yes":
+    if status == "yes":
+        user = input("What is your name")
+        bid = int(input("Put the bid amount $"))
+        total_user[user]=bid
+        status = input("Is here anyone available for bid? yes/no").lower()
+    elif status == "no":
+        print("No user to bid")
+    else:
+        print("You put a wrong inpute")
+def height_bid():
+    height = max(total_user, key=total_user.get)
+    highest_amount = total_user[height]
+    print(f"The highest bidder is {height} with a bid of ${highest_amount}.")
+
+height_bid()
