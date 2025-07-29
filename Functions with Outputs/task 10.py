@@ -6,4 +6,4 @@ def formate_name(f_name,l_name):
     return output
 print(formate_name("KarIme", "HassaIn"))
 
-# Task 10.2
+# Task 10.2 new update
