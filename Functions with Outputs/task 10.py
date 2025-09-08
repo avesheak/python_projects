@@ -32,5 +32,34 @@ month = int(input("Enter a month: "))
 days = days_in_month(year, month)
 print(days)
 
-#Task 10.3 
-test update 
+#Function with output 
+def formate_name (f_name, l_name):
+  if f_name == "" or l_name=="":
+    return "You do not put any valid input"
+  format_f_name = f_name.title()
+  formated_l_name = l_name.title()
+  return f"{format_f_name} {formated_l_name}"
+
+print(formate_name(input("What is your first name? ", input("What is your last name? "))))
+
+## FInal Project Calculator
+
+def Calculator(num1, oparator, num2):
+  print (Calculator)
+  if oparator == "add":
+    return num1+num2
+  if oparator == "substrack":
+    return num1-num2
+  if oparator == "multiple":
+    return num1*num2
+  if oparator == "devide":
+    return num1/num2
+
+
+print(Calculator(input("What is your Number 1? "), input("What is your oparator"),  input("What is your 2nd Number? ")))
+
+#Final_taks
+
+
+
+
