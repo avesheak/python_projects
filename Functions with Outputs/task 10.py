@@ -59,6 +59,14 @@ def Calculator(num1, oparator, num2):
 print(Calculator(input("What is your Number 1? "), input("What is your oparator"),  input("What is your 2nd Number? ")))
 
 #Final_taks
+def add(num1, num2):
+  return num1 +num2
+def subtract(num1, num2):
+  return num1 - num2
+def multiply(num1, num2):
+  return num1 * num2
+def divide(num1, num2):
+  return num1 / num2
 
 
 
