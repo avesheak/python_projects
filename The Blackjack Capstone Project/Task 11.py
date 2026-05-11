@@ -13,30 +13,30 @@ z1= random.randint (1, 10)
 x2 = random.randint (1, 10)
 y2= random.randint (1, 10)
 z2= random.randint (1, 10)
-player = 0
-dealer = 0
 
 def player():
-    print(x1,x2)
     sum1= x1 + y1
     return sum1
 
 def banker():
-    print(x2+y2)
     sum2= x2 + y2
     return sum2
 
-def morecards():
-    print(z1)
-    if show_more_card =="y":
+def morecards(choice):
+    if choice =="y":
         print("New Card", z1)
         sum = x1+y1+z1
-        return sum
+        if player() < banker():
+            print("Player Win")
+    elif player() > banker():
+        print("Banker win")
+    else: print("Draw")
+    
 
-
-player_total=player()
-banker_total=banker()
-print("Lets start the game")
-print(f"Starting by the player {player_total}")
-
-
+def function():
+    print("Lets start the game")
+    print(f"The player score is {player()}")
+    choice=input(print("DO you want to draw more card Press y")).lower()
+    morecards(choice)
+    
+function()
