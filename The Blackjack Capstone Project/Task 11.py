@@ -38,6 +38,5 @@ def function():
     print(f"The player score is {player()}")
     choice=input(print("DO you want to draw more card Press y")).lower()
     morecards(choice)
-    test
-    
+ 
 function()
